@@ -142,7 +142,7 @@ main {
     width: 100%;
     height: calc(100vh - 60px);
     background: url(./assets/truck/openart-563534380acd413799c586f47c37efde\(1\).png) no-repeat;
-    background-position: 0 -270px;
+    background-position: 0 -220px;
     background-size: cover;
     background-color: rgb(14, 14, 14);
     mask: linear-gradient(red 0%, red 85%,transparent 100%, transparent 100%);

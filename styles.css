@@ -18,6 +18,7 @@
 body {
     width: 100%;
     min-height: 100vh;
+    background-color: rgb(14, 14, 14);
 }
 
 .flavor-junction {
@@ -38,6 +39,7 @@ nav {
     justify-content: space-between;
     padding-inline: 50px;
     font-family: var(--f-poppins);
+    z-index: 3;
 }
 
 .logo {
@@ -55,6 +57,11 @@ nav {
 .links > a {
     text-decoration: none;
     color: white;
+    transition: 200ms;
+}
+
+.links > a:hover {
+    color: rgb(201, 201, 201);
 }
 
 .links > a::after {
@@ -137,6 +144,8 @@ main {
     background: url(./assets/truck/openart-563534380acd413799c586f47c37efde\(1\).png) no-repeat;
     background-position: 0 -270px;
     background-size: cover;
+    background-color: rgb(14, 14, 14);
+    mask: linear-gradient(red 0%, red 85%,transparent 100%, transparent 100%);
 }
 
 

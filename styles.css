@@ -286,7 +286,11 @@ main {
 .content-2 {
     width: 100%;
     margin-top: 650px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
+}
+
+.content-2 * {
+    font-family: var(--f-poppins);
 }
 
 .content-2-text {
@@ -298,6 +302,91 @@ main {
 .content-2-text > h1 {
     margin-top: 20px;
     text-align: center;
-    font-size: max(5vw, 2.5rem);
+    font-size: max(4.5vw, 2.5rem);
     color: white;
+}
+
+.samples-food {
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 55px;
+}
+
+.samples-food > fieldset {
+    width: 400px;
+    border: 0;
+    display: flex;
+}
+
+.samples-food > fieldset > legend {
+    text-align: center;
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 500;
+}
+
+.samples-food > fieldset > img {
+    width: 100%;
+    height: 300px;
+    margin-top: 5px;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.29);
+    border: 1px solid rgba(255, 255, 255, 0.144);
+}
+
+.order-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.order-button > button {
+    background: #ff8400;
+    border-radius: 5rem;
+    color: white;
+    font-family: var(--f-poppins);
+    border: 0;
+    width: 150px;
+    height: 40px;
+    font-size: 1rem;
+    transition: 200ms;
+    position: relative;
+}
+
+.order-button > button::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    transform: scale(1.1, 1.3);
+    border-radius: 5rem;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: #ff840021;
+}
+
+.order-button > button > a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    border-radius: 5rem;
+}
+
+.order-button > button:hover .order-now-anchor {
+    color: var(--c-orange);
+}
+
+.order-button > button:hover {
+    background: white;
+    font-size: 1.2rem;
+    font-weight: bold;
 }

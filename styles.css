@@ -272,4 +272,5 @@ main {
 
 .dots > a:hover {
     scale: 1.5;
+    background: white;
 }

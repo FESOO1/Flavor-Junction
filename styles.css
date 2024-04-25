@@ -223,10 +223,12 @@ main {
 }
 
 .gallery {
+    position: relative;
     width: 100%;
     height: calc(100vh - 60px);
     display: flex;
     overflow: hidden;
+    mask: linear-gradient(transparent 0%,red 25%, red 75%,transparent 100%, transparent 100%);
 }
 
 .gallery > img {

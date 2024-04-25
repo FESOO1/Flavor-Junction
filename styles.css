@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 
 :root {
@@ -8,6 +9,7 @@
     --f-roboto: "Roboto", sans-serif;
     --f-content: "Sedan", serif;
     --c-orange: #ff8400;
+    --f-all: "Zilla Slab", serif;
 }
 
 html {
@@ -160,13 +162,16 @@ main {
     background: rgb(14, 14, 14);
 }
 
+.main-content * {
+    font-family: var(--f-all);
+}
+
 .welcome-header {
     width: 100%;
     margin-top: 80px;
     display: flex;
     justify-content: center;
     text-align: center;
-    font-family: var(--f-poppins);
 }
 
 .welcome-header > h1 {
@@ -198,7 +203,7 @@ main {
 .text-1 > h1,
 .text-2 > h1,
 .text-3 > h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     text-align: center;
     color: var(--c-orange);
 }
@@ -206,6 +211,7 @@ main {
 .text-1 > p,
 .text-2 > p,
 .text-3 > p {
+    font-size: 1.1rem;
     color: rgb(255, 255, 255);
     text-align: justify;
 }
@@ -223,6 +229,7 @@ main {
     margin-top: 100px;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .gallery {
@@ -230,7 +237,6 @@ main {
     height: calc(100vh - 60px);
     display: flex;
     overflow: hidden;
-    position: relative;
     scroll-behavior: smooth;
     mask: linear-gradient(transparent 0%,red 25%, red 95%,transparent 100%);
 }
@@ -244,16 +250,16 @@ main {
 }
 
 .dots {
-    bottom: 35px;
+    top: 650px;
     left: 47%;
     width: 80px;
     height: 20px;
     /* border: 2px solid var(--c-orange); */
-    position: absolute;
     border-radius: 5rem;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    position: absolute;
 }
 
 .dots > a {

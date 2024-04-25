@@ -10,6 +10,8 @@
     --f-content: "Sedan", serif;
     --c-orange: #ff8400;
     --f-all: "Zilla Slab", serif;
+
+    
 }
 
 html {
@@ -26,6 +28,7 @@ body {
     width: 100%;
     min-height: 100vh;
     background-color: rgb(14, 14, 14);
+    overscroll-behavior: none;
 }
 
 .flavor-junction {
@@ -265,13 +268,23 @@ main {
 
 .dots > a {
     border-radius: 5rem;
-    width: 8px;
-    height: 8px;
-    background: rgb(163, 163, 163);
+    width: 9px;
+    height: 9px;
+    background: rgba(163, 163, 163, 0.236);
     transition: 200ms;
+    border: 1px solid rgb(163,163,163);
 }
 
 .dots > a:hover {
     scale: 1.5;
     background: white;
+    border: 0;
+}
+
+/* CONTENT 2 */
+
+.content-2 {
+    width: 100%;
+    height: 555px;
+    margin-top: 650px;
 }

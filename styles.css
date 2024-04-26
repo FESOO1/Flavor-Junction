@@ -486,7 +486,6 @@ main {
 footer {
     width: 100%;
     display: flex;
-    padding-block: 5px;
     font-family: var(--f-poppins);
     justify-content: space-around;
     background: rgb(14, 14, 14);
@@ -505,6 +504,7 @@ footer > p > a:hover {
 }
 
 footer > p {
+    padding-block: 8px;
     color: white;
     font-size: 0.8rem;
 }

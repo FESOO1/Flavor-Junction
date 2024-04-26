@@ -257,7 +257,7 @@ main {
 }
 
 .main-content * {
-    font-family: var(--f-all);
+    font-family: var(--f-poppins);
 }
 
 .welcome-header {

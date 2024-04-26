@@ -535,6 +535,9 @@ footer > p {
     .order {
         display: none;
     }
+    footer {
+        padding-bottom: 60px;
+    }
 }
 
 /* HOME IMAGE */
@@ -563,4 +566,57 @@ footer > p {
     }
 }
 
-/*  */
+/* MAIN TEXTS  */
+
+@media (max-width: 1000px) {
+    .welcome-header > h1 {
+        padding-inline: 50px;
+    }
+    .content {
+        row-gap: 40px;
+        grid-template-columns: 1fr;
+        margin-top: 50px;
+        padding-inline: 50px;
+        column-gap: 0;
+    }
+    .text-1,
+    .text-2 {
+        transform: translateY(0px);
+    }
+    .text-1 > h1,
+    .text-2 > h1,
+    .text-3 > h1 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .text-1 > h1,
+    .text-2 > h1,
+    .text-3 > h1 {
+        font-size: 2rem;
+    }
+    .text-1 > p,
+    .text-2 > p,
+    .text-3 > p {
+    font-size: 1.1rem;
+    }
+    .welcome-header > h1 {
+        font-size: 2rem;
+        padding-inline: 20px;
+    }
+    .content {
+        padding-inline: 30px;
+    }
+}
+
+/* FOOD MENU */
+
+@media (max-width: 888px) {
+    .samples-food {
+        padding-inline: 10px;
+    }
+    .samples-food > fieldset {
+        width: 90%;
+    }
+}

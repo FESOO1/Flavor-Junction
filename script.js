@@ -1,9 +1,19 @@
-let numberOne = 2456;
-let numberTwo = 61541564;
+const argumentOne = "Foo"
+const argumentTwo = [55,33,66]
 
-numbers(numberOne,numberTwo)
+example(argumentOne,argumentTwo);
 
-function numbers(numberOne,numberTwo) {
-    let newResult = numberOne * numberTwo;
-    console.log(newResult);
+function example(argumentOne, argumentTwo) {
+    
+    let result = argumentOne * argumentTwo;
+
+
 }
+
+
+argumentTwo[2] = "Hello, "
+
+argumentTwo[1] = "I am Firdavs."
+
+
+console.log(argumentTwo[2] + argumentTwo[1])

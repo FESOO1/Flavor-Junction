@@ -427,3 +427,26 @@ footer > p {
     color: white;
     font-size: 0.8rem;
 }
+
+
+/* MEDIA QUERY */
+
+/* HOME IMAGE */
+
+@media (max-width: 1250px) {
+    .main-image {
+        background-position: 0 -100px;
+    }
+}
+
+@media (max-width: 1044px) {
+    .main-image {
+        background-position: 0 0px;
+    }
+}
+
+@media (max-width: 920px) {
+    .main-image {
+        background-position: center;
+    }
+}

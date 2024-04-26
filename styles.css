@@ -49,7 +49,7 @@ nav {
     justify-content: space-between;
     padding-inline: 50px;
     font-family: var(--f-poppins);
-    z-index: 3;
+    z-index: 53;
 }
 
 .logo {
@@ -137,6 +137,98 @@ nav {
     background: white;
     font-size: 1rem;
     font-weight: bold;
+}
+
+/* MENU */
+
+.menu {
+    width: 35px;
+    height: 35px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu * {
+    position: absolute;
+    transition: 300ms;
+}
+
+.menu-top {
+    transform: translateY(-5px);
+    width: 30px;
+    height: 4px;
+    border-radius: 1rem;
+    background-color: white;
+}
+
+.menu-bottom {
+    transform: translateY(5px);
+    width: 30px;
+    height: 4px;
+    border-radius: 1rem;
+    background-color: white;
+}
+
+.menu-js > .menu-top {
+    background-color: var(--c-orange);
+    transform: translateY(0) rotateZ(45deg);
+}
+
+.menu-js > .menu-bottom {
+    background-color: var(--c-orange);
+    transform: translateY(0) rotateZ(-45deg);
+}
+
+.menu-links {
+    top: 0;
+    position: fixed;
+    width: 40%;
+    height: calc(100% - 60px);
+    z-index: -1;
+    left: -50%;
+    background: rgba(0, 0, 0, 0.692);
+    backdrop-filter: blur(5px);
+    border-right: 1px solid rgba(163, 163, 163, 0.236);
+    padding-block: 15px;
+    display: grid;
+    transition: 1s;
+}
+
+.menu-inner-links {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 25px;
+}
+
+.menu-inner-links > a {
+    text-decoration: none;
+    color: white;
+}
+
+.inner-call-button {
+    background: #ff8400;
+    border-radius: 5rem;
+    color: white;
+    font-family: var(--f-poppins);
+    border: 0;
+    width: 80px;
+    height: 30px;
+    font-size: 0.9rem;
+    transition: 200ms;
+    position: relative;
+}
+
+.inner-call-button > a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-links-js {
+    transition: 300ms;
+    left: 0;
 }
 
 /* CONTENT */
@@ -391,14 +483,6 @@ main {
     font-weight: bold;
 }
 
-/* DIVIDER */
-
-/* main > svg {
-    margin-top: 1810px;
-    transform: rotateZ(180deg);
-    display: flex;
-} */
-
 /* FOOTER */
 
 footer {
@@ -431,6 +515,31 @@ footer > p {
 
 /* MEDIA QUERY */
 
+/* NAVBAR */
+
+@media (max-width: 1100px) {
+    nav {
+        padding-inline: 15px;
+    }
+}
+
+@media (max-width: 900px) {
+    nav {
+        border-bottom: 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.144);
+        top: calc(100% - 60px);
+    }
+    .menu {
+        display: flex;
+    }
+    .links {
+        display: none;
+    }
+    .order {
+        display: none;
+    }
+}
+
 /* HOME IMAGE */
 
 @media (max-width: 1250px) {
@@ -448,5 +557,11 @@ footer > p {
 @media (max-width: 920px) {
     .main-image {
         background-position: center;
+    }
+}
+
+@media (max-width: 900px) {
+    main {
+        margin-top: 0;
     }
 }

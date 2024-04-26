@@ -331,7 +331,7 @@ main {
     display: flex;
     overflow: hidden;
     scroll-behavior: smooth;
-    mask: linear-gradient(transparent 0%,red 25%, red 95%,transparent 100%);
+    mask: linear-gradient(transparent 0%,red 20%, red 95%,transparent 100%);
 }
 
 .gallery > img {
@@ -344,8 +344,9 @@ main {
 }
 
 .dots {
-    top: 650px;
-    left: 47%;
+    bottom: 30px;
+    /* left: 47%; */
+    left: center;
     width: 80px;
     height: 20px;
     /* border: 2px solid var(--c-orange); */
@@ -618,5 +619,13 @@ footer > p {
     }
     .samples-food > fieldset {
         width: 90%;
+    }
+}
+
+/* GALLERY */
+
+@media (max-width: 1000px) {
+    .gallery > img {
+        object-position: center;
     }
 }
